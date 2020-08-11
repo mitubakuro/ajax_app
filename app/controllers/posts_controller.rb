@@ -10,6 +10,9 @@ class PostsController < ApplicationController
   end
 
   def checked
+
+    # binding.pry
+
     post = Post.find(params[:id])
     if post.checked then
       post.update(checked: false)
