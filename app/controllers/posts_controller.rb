@@ -9,7 +9,6 @@ class PostsController < ApplicationController
     # redirect_to action: :index
     post = Post.create(content: params[:content], checked: false)
     render json:{ post: post }
-
   end
 
   def checked
